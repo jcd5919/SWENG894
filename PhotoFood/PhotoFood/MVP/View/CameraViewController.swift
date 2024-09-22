@@ -3,6 +3,7 @@
 //  PhotoFood
 //
 //  Created by Joseph Duckwall on 9/19/24.
+//  Based on information provided by iOS academy for creating adding a camera view to an application
 //
 
 import UIKit
