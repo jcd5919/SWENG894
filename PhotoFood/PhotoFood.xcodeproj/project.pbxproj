@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98F4C1C82CA0B8A9005AA6D3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F4C1C72CA0B8A9005AA6D3 /* SearchView.swift */; };
-		98F4C1CA2CA0B918005AA6D3 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F4C1C92CA0B918005AA6D3 /* FavoritesView.swift */; };
-		98F4C1CC2CA0B938005AA6D3 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F4C1CB2CA0B938005AA6D3 /* FavoritesView.swift */; };
+		9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C7442CA740240071C685 /* FavoriteViewController.swift */; };
 		98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848C72C9CB4810080105D /* AppDelegate.swift */; };
 		98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848C92C9CB4810080105D /* SceneDelegate.swift */; };
 		98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848CB2C9CB4810080105D /* CameraViewController.swift */; };
@@ -22,9 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		98F4C1C72CA0B8A9005AA6D3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		98F4C1C92CA0B918005AA6D3 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		98F4C1CB2CA0B938005AA6D3 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		9809C7442CA740240071C685 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		98F848C42C9CB4810080105D /* PhotoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F848C72C9CB4810080105D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F848C92C9CB4810080105D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +71,6 @@
 				98F848D52C9CB4820080105D /* LaunchScreen.storyboard */,
 				98F848D82C9CB4820080105D /* Info.plist */,
 				98F848D02C9CB4810080105D /* PhotoFood.xcdatamodeld */,
-				98F4C1C72CA0B8A9005AA6D3 /* SearchView.swift */,
-				98F4C1CB2CA0B938005AA6D3 /* FavoritesView.swift */,
 			);
 			path = PhotoFood;
 			sourceTree = "<group>";
@@ -87,7 +81,6 @@
 				98F848E52C9CC6990080105D /* Presenter */,
 				98F848E42C9CC6930080105D /* View */,
 				98F848E32C9CC68A0080105D /* Model */,
-				98F4C1C92CA0B918005AA6D3 /* FavoritesView.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -103,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				98F848CB2C9CB4810080105D /* CameraViewController.swift */,
+				9809C7442CA740240071C685 /* FavoriteViewController.swift */,
 				98F848E62C9CD9720080105D /* SearchViewController.swift */,
 			);
 			path = View;
@@ -191,9 +185,7 @@
 				98F848D22C9CB4810080105D /* PhotoFood.xcdatamodeld in Sources */,
 				98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */,
 				98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */,
-				98F4C1CC2CA0B938005AA6D3 /* FavoritesView.swift in Sources */,
-				98F4C1CA2CA0B918005AA6D3 /* FavoritesView.swift in Sources */,
-				98F4C1C82CA0B8A9005AA6D3 /* SearchView.swift in Sources */,
+				9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */,
 				98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

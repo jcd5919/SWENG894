@@ -30,12 +30,21 @@ class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Camera Search"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back",
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(backSelf))
+        
         view.backgroundColor = .black
         view.layer.addSublayer(preview)
         view.addSubview(shutterButton)
         
         checkCameraPermissions()
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -113,5 +122,8 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate{
         imageView.contentMode = .scaleAspectFill
         imageView.frame = view.bounds
         view.addSubview(imageView)
+    }
+    @objc private func backSelf(){
+        dismiss(animated: true, completion: nil)
     }
 }

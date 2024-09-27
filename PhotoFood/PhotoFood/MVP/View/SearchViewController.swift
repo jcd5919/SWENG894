@@ -14,10 +14,29 @@ class SearchViewController: UIViewController{
         super.viewDidLoad()
     }
     
-    @IBAction func addTextBox(sender: UIButton){
-        let alertController = UIAlertController(title: "Welcome to my first test", message: "Hello testers", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+
+    @IBAction func cameraButton(_ sender: Any) {
+        
+        guard let cvc = storyboard?.instantiateViewController(withIdentifier: "cameraController") else{
+            print("failed to get cvc from storyboard")
+            return
+        }
+        let navVC = UINavigationController(rootViewController: cvc)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
     }
     
+    @IBAction func searchTap(_ sender: Any) {
+        print("To be added at later sprint")
+    }
+    
+    @IBAction func favoritesButton(_ sender: Any) {
+        guard let fvc = storyboard?.instantiateViewController(withIdentifier: "favoriteController") else{
+            print("failed to get fvc from storyboard")
+            return
+        }
+        let navVC = UINavigationController(rootViewController: fvc)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
+    }
 }
