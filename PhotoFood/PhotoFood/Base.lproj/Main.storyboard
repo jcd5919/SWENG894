@@ -1,97 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aas-ZZ-aD6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="PhotoFood" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CxJ-Gj-9ur">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="otH-kk-ulf">
-                                <rect key="frame" x="41" y="59" width="311" height="40.666666666666657"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture Your Food!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-ET-Uss">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a02-EL-HDq">
-                                <rect key="frame" x="128" y="412" width="137" height="132.66666666666663"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVI-mz-e3r">
-                                        <rect key="frame" x="0.0" y="0.0" width="137" height="34"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-GA-Qfm">
-                                        <rect key="frame" x="0.0" y="49" width="137" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Add Ingredient"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-bd-XSe">
-                                        <rect key="frame" x="0.0" y="98.333333333333314" width="137" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Search"/>
-                                        <connections>
-                                            <action selector="searchTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gy-jr-eQE"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dka-84-Obm">
-                                <rect key="frame" x="126" y="649" width="141" height="68.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgm-l0-P65">
-                                        <rect key="frame" x="0.0" y="0.0" width="141" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Favorites"/>
-                                        <connections>
-                                            <action selector="favoritesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEh-Zq-GZq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-J1-hzZ">
-                                        <rect key="frame" x="0.0" y="34.333333333333371" width="141" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Camera Search"/>
-                                        <connections>
-                                            <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Sb-Co-WbN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="A4f-Sh-ifP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="otH-kk-ulf" firstAttribute="centerX" secondItem="CxJ-Gj-9ur" secondAttribute="centerX" id="5AG-Fs-Lsa"/>
-                            <constraint firstItem="a02-EL-HDq" firstAttribute="centerX" secondItem="dka-84-Obm" secondAttribute="centerX" id="8Dw-GR-XUx"/>
-                            <constraint firstItem="a02-EL-HDq" firstAttribute="leading" secondItem="A4f-Sh-ifP" secondAttribute="leading" constant="128" id="UHR-p8-kgL"/>
-                            <constraint firstItem="otH-kk-ulf" firstAttribute="top" secondItem="A4f-Sh-ifP" secondAttribute="top" id="UwF-nE-8sd"/>
-                            <constraint firstItem="a02-EL-HDq" firstAttribute="top" secondItem="CxJ-Gj-9ur" secondAttribute="top" constant="412" id="jCP-wU-3mg"/>
-                            <constraint firstItem="otH-kk-ulf" firstAttribute="leading" secondItem="A4f-Sh-ifP" secondAttribute="leading" constant="41" id="lE2-gK-EV4"/>
-                            <constraint firstItem="otH-kk-ulf" firstAttribute="centerX" secondItem="a02-EL-HDq" secondAttribute="centerX" id="wAg-wC-h2R"/>
-                            <constraint firstItem="A4f-Sh-ifP" firstAttribute="bottom" secondItem="dka-84-Obm" secondAttribute="bottom" constant="51.333333333333371" id="zpy-vF-QOx"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-408.39694656488547" y="9.8591549295774659"/>
-        </scene>
         <!--Favorite View Controller-->
         <scene sceneID="cqG-I3-92U">
             <objects>
@@ -145,6 +62,159 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFz-ih-B6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="509" y="-425"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="xy0-xv-2ed">
+            <objects>
+                <viewController id="aas-ZZ-aD6" customClass="SearchViewController" customModule="PhotoFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i90-kj-tbg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-Qk-0EU">
+                                <rect key="frame" x="93.000000000000014" y="59" width="210.33333333333337" height="33.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Your Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nu3-KZ-2ls">
+                                        <rect key="frame" x="0.0" y="0.0" width="210.33333333333334" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="thL-qV-dg5">
+                                <rect key="frame" x="132" y="346" width="134.33333333333337" height="202.33333333333337"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-aQ-95M">
+                                        <rect key="frame" x="0.0" y="0.0" width="134.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-8I-Nak">
+                                        <rect key="frame" x="0.0" y="42" width="134.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-a6-M8V">
+                                        <rect key="frame" x="0.0" y="84" width="134.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69f-ha-67d">
+                                        <rect key="frame" x="0.0" y="126" width="134.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of2-A2-qjq">
+                                        <rect key="frame" x="0.0" y="168" width="134.33333333333334" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                        <connections>
+                                            <action selector="searchTap:" destination="aas-ZZ-aD6" eventType="touchUpInside" id="cc8-yg-WrR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-zH-GQb">
+                                <rect key="frame" x="126" y="616" width="141" height="68.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n0-Bv-su6">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Camera Search"/>
+                                        <connections>
+                                            <action selector="cameraButton:" destination="aas-ZZ-aD6" eventType="touchUpInside" id="f9Q-zZ-4BR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4z-Zj-PJO">
+                                        <rect key="frame" x="0.0" y="34.333333333333371" width="141" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Favorites"/>
+                                        <connections>
+                                            <action selector="favoritesButton:" destination="aas-ZZ-aD6" eventType="touchUpInside" id="jgg-TP-wmo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9W-h2-s3q">
+                                <rect key="frame" x="106" y="258" width="181" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t17-ix-oxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of food" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDa-2e-GXT">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diet Restrictions" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-3V-fKz">
+                                                <rect key="frame" x="0.0" y="45" width="106.66666666666667" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="l7Z-E9-zPC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bag-JV-Jnn">
+                                        <rect key="frame" x="106.66666666666666" y="0.0" width="74.333333333333343" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-3x-Ilt">
+                                                <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="30"/>
+                                                <menu key="menu" id="5xM-N4-BtH">
+                                                    <children>
+                                                        <command title="Item 1" id="2ag-hW-gWb"/>
+                                                        <command title="Item 2" id="ont-dp-Rlt"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-Xe-wOa">
+                                                <rect key="frame" x="0.0" y="32" width="74.333333333333329" height="30"/>
+                                                <menu key="menu" id="F84-CN-R5Z">
+                                                    <children>
+                                                        <command title="Item 1" id="5yy-d7-bnD"/>
+                                                        <command title="Item 2" id="WtH-4t-cyv"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xaR-gY-GEw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h9W-h2-s3q" firstAttribute="centerX" secondItem="i90-kj-tbg" secondAttribute="centerX" id="09G-MX-qYs"/>
+                            <constraint firstItem="thL-qV-dg5" firstAttribute="leading" secondItem="xaR-gY-GEw" secondAttribute="leading" constant="132" id="FJi-FS-jV3"/>
+                            <constraint firstItem="xaR-gY-GEw" firstAttribute="trailing" secondItem="thL-qV-dg5" secondAttribute="trailing" constant="126.66666666666663" id="G3W-sm-Se2"/>
+                            <constraint firstItem="h9W-h2-s3q" firstAttribute="centerX" secondItem="Qxa-zH-GQb" secondAttribute="centerX" id="I3B-Dv-Ywf"/>
+                            <constraint firstItem="vuL-Qk-0EU" firstAttribute="leading" secondItem="xaR-gY-GEw" secondAttribute="leading" constant="93" id="LDp-Ng-0gb"/>
+                            <constraint firstItem="xaR-gY-GEw" firstAttribute="bottom" secondItem="Qxa-zH-GQb" secondAttribute="bottom" constant="133.33333333333337" id="R6c-zw-oz5"/>
+                            <constraint firstItem="thL-qV-dg5" firstAttribute="top" secondItem="h9W-h2-s3q" secondAttribute="bottom" constant="26" id="oMa-3e-h92"/>
+                            <constraint firstItem="Qxa-zH-GQb" firstAttribute="top" secondItem="thL-qV-dg5" secondAttribute="bottom" constant="67.666666666666629" id="oYx-pE-gKq"/>
+                            <constraint firstItem="h9W-h2-s3q" firstAttribute="leading" secondItem="xaR-gY-GEw" secondAttribute="leading" constant="106" id="r0l-6J-6mi"/>
+                            <constraint firstItem="vuL-Qk-0EU" firstAttribute="top" secondItem="xaR-gY-GEw" secondAttribute="top" id="v7d-eP-Qnf"/>
+                            <constraint firstItem="xaR-gY-GEw" firstAttribute="trailing" secondItem="vuL-Qk-0EU" secondAttribute="trailing" constant="89.666666666666629" id="ww2-SU-50B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dietFilterButton" destination="5ln-Xe-wOa" id="sPW-Zn-fJp"/>
+                        <outlet property="foodFilterButton" destination="OFj-3x-Ilt" id="LNi-kU-0I9"/>
+                        <outlet property="ingredient1Box" destination="Dl8-aQ-95M" id="KlT-yG-6vZ"/>
+                        <outlet property="ingredient2Box" destination="E0z-8I-Nak" id="14K-Bg-6RK"/>
+                        <outlet property="ingredient3Box" destination="xWf-a6-M8V" id="kuS-g9-RAd"/>
+                        <outlet property="ingredient4Box" destination="69f-ha-67d" id="TDd-2P-AfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbp-fq-bdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660.30534351145036" y="-85.211267605633807"/>
         </scene>
     </scenes>
     <resources>

@@ -8,13 +8,33 @@
 import Foundation
 import UIKit
 
-class SearchViewController: UIViewController{
+
+protocol SearchView: AnyObject {
+}
+
+class SearchViewController: UIViewController, PresenterView{
+    func updateSearchUI() {
+    }
+    
+    
+    
+    @IBOutlet weak var foodFilterButton: UIButton!
+    @IBOutlet weak var dietFilterButton: UIButton!
+    
+    
+    @IBOutlet weak var ingredient1Box: UITextField!
+    @IBOutlet weak var ingredient2Box: UITextField!
+    @IBOutlet weak var ingredient3Box: UITextField!
+    @IBOutlet weak var ingredient4Box: UITextField!
+    
+    lazy var presenter = SearchPresenter(view:self)
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        setUpFoodFilterButton()
+        setUpDietFilterButton()
     }
     
-
     @IBAction func cameraButton(_ sender: Any) {
         
         guard let cvc = storyboard?.instantiateViewController(withIdentifier: "cameraController") else{
@@ -26,8 +46,43 @@ class SearchViewController: UIViewController{
         present(navVC, animated: true)
     }
     
+    func setUpFoodFilterButton(){
+        
+        let typeChoices = {(action: UIAction)
+            in print(action.title)}
+        foodFilterButton.menu = UIMenu(children: [
+            UIAction(title: "None", state: .on, handler: typeChoices),
+            UIAction(title: "Breakfast", handler: typeChoices),
+            UIAction(title: "Lunch", handler: typeChoices),
+            UIAction(title: "Dinner", handler: typeChoices),
+            UIAction(title: "Dessert", handler: typeChoices)])
+        foodFilterButton.showsMenuAsPrimaryAction = true
+        foodFilterButton.changesSelectionAsPrimaryAction = true
+    }
+    
+    func setUpDietFilterButton(){
+        
+        let dietChoices = {(action: UIAction)
+            in print(action.title)}
+        dietFilterButton.menu = UIMenu(children: [
+            UIAction(title: "None", state: .on, handler: dietChoices),
+            UIAction(title: "Vegetarian", handler: dietChoices),
+            UIAction(title: "Vegan", handler: dietChoices),
+            UIAction(title: "Gluten-Free", handler: dietChoices),
+            UIAction(title: "Dairy-Free", handler: dietChoices),])
+        dietFilterButton.showsMenuAsPrimaryAction = true
+        dietFilterButton.changesSelectionAsPrimaryAction = true
+    }
+    
     @IBAction func searchTap(_ sender: Any) {
-        print("To be added at later sprint")
+        
+        presenter.foodFilter = foodFilterButton.currentTitle
+        presenter.typeFilter = dietFilterButton.currentTitle
+        presenter.ingredient1 = ingredient1Box.text
+        presenter.ingredient2 = ingredient2Box.text
+        presenter.ingredient3 = ingredient3Box.text
+        presenter.ingredient4 = ingredient4Box.text
+        presenter.searchButtonClicked()
     }
     
     @IBAction func favoritesButton(_ sender: Any) {
@@ -39,4 +94,6 @@ class SearchViewController: UIViewController{
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true)
     }
+    
+
 }
