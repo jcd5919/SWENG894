@@ -23,17 +23,41 @@ class SearchPresenter {
     var ingredient3: String!
     var ingredient4: String!
     
+    var searchURL: String!
+    
     init(view:PresenterView){
         self.presenterView = view
     }
     
-    func searchButtonClicked(){
-        print("Food Filter: " + foodFilter)
-        print("Type Filter: " + typeFilter)
-        print("Ingredient1: " + ingredient1)
-        print("Ingredient2: " + ingredient2)
-        print("Ingredient3: " + ingredient3)
-        print("Ingredient4: " + ingredient4)
 
+    func searchButtonClicked(){
+        self.searchURL = createSearch(foodFilter: foodFilter, typeFilter: typeFilter, ingredient1: ingredient1, ingredient2: ingredient2, ingredient3: ingredient3, ingredient4: ingredient4)
+    
     }
+    
+    
+    func createSearch(foodFilter: String = "None", typeFilter: String = "None", ingredient1: String, ingredient2: String = "", ingredient3: String = "", ingredient4: String = "")-> String {
+       
+        var search = ""
+        if foodFilter != "None" {
+            search += foodFilter
+        }
+        if typeFilter != "None" {
+            search += typeFilter
+        }
+        search += ingredient1
+        if ingredient2 != "" {
+            search += "+" + ingredient2
+        }
+        if ingredient3 != "" {
+            search += "+" + ingredient3
+        }
+        if ingredient4 != "" {
+            search += "+" + ingredient4
+        }
+        search += "+recipes"
+        
+        return search
+    }
+
 }

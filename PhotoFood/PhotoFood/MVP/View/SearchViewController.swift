@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import SwiftUI
 
 protocol SearchView: AnyObject {
 }
@@ -83,7 +83,11 @@ class SearchViewController: UIViewController, PresenterView{
         presenter.ingredient3 = ingredient3Box.text
         presenter.ingredient4 = ingredient4Box.text
         presenter.searchButtonClicked()
-    }
+        var searchURL = presenter.searchURL
+        let hostingController = UIHostingController(rootView: SearchContentView(searchWord: searchURL!))
+        hostingController.modalPresentationStyle = .fullScreen
+        present(hostingController, animated: true)
+}
     
     @IBAction func favoritesButton(_ sender: Any) {
         guard let fvc = storyboard?.instantiateViewController(withIdentifier: "favoriteController") else{
@@ -97,3 +101,5 @@ class SearchViewController: UIViewController, PresenterView{
     
 
 }
+
+    

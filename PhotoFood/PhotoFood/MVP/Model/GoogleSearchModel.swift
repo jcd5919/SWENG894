@@ -12,16 +12,30 @@ import Foundation
 struct GoogleSearchModel: Identifiable {
     
     let id = UUID()
-    let name: [String?]
-    let desc: [String?]
-    let urlLink: [String?]
+    let title: [String?]
+    let description: [String?]
+    let link: [String?]
     
 }
 
 //Create the model that will contain the entirety of results that result from our Google search request
 
-struct SearchResults{
+struct ItemsData{
     
-    var results:[GoogleSearchModel]
+    var allItems:[GoogleSearchModel]
     
+}
+
+//Create the model that will contain the entiredty of images from the google search request
+
+struct SearchImages: Identifiable {
+    
+    let id = UUID()
+    let image: [String?]
+    
+}
+
+struct ImageData {
+    
+    var allImages: [SearchImages]
 }
