@@ -6,7 +6,8 @@
 //
 
 import XCTest
-@testable import GoogleSearchPresenterView
+
+@testable import PhotoFood
 
 final class SearchViewPresenterTest: XCTestCase {
 
@@ -18,8 +19,9 @@ final class SearchViewPresenterTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testCreateSearch() throws {
-        createSearch
+    func testBasicCreateSearch() throws {
+        let test = createSearch(ingredient1: "apples", ingredient2: "pie crust", ingredient3: "cinammon")
+        XCTAssertEqual(test, "apples pie curst cinammon recipe")
     }
 
     func testPerformanceExample() throws {

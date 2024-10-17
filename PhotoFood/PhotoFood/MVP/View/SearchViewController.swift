@@ -83,7 +83,7 @@ class SearchViewController: UIViewController, PresenterView{
         presenter.ingredient3 = ingredient3Box.text
         presenter.ingredient4 = ingredient4Box.text
         presenter.searchButtonClicked()
-        var searchURL = presenter.searchURL
+        let searchURL = presenter.searchURL
         let hostingController = UIHostingController(rootView: SearchContentView(searchWord: searchURL!))
         hostingController.modalPresentationStyle = .fullScreen
         present(hostingController, animated: true)

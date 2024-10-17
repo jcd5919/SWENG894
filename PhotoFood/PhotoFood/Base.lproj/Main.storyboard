@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-N4-nWn">
-                                <rect key="frame" x="131" y="59" width="131.66666666666663" height="40.666666666666657"/>
+                                <rect key="frame" x="131" y="59" width="168.33333333333337" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-fG-5l2">
@@ -162,9 +162,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bag-JV-Jnn">
                                         <rect key="frame" x="106.66666666666666" y="0.0" width="74.333333333333343" height="62"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-3x-Ilt">
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-3x-Ilt" userLabel="FoodFilter">
                                                 <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="30"/>
-                                                <menu key="menu" id="5xM-N4-BtH">
+                                                <accessibility key="accessibilityConfiguration" identifier="FoodFilter" label="FoodFilter"/>
+                                                <menu key="menu" id="5xM-N4-BtH" userLabel="FoodFilterMenu">
                                                     <children>
                                                         <command title="Item 1" id="2ag-hW-gWb"/>
                                                         <command title="Item 2" id="ont-dp-Rlt"/>
@@ -172,9 +173,10 @@
                                                 </menu>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-Xe-wOa">
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-Xe-wOa" userLabel="DietFilter">
                                                 <rect key="frame" x="0.0" y="32" width="74.333333333333329" height="30"/>
-                                                <menu key="menu" id="F84-CN-R5Z">
+                                                <accessibility key="accessibilityConfiguration" identifier="DietFilter" label="DietFilter"/>
+                                                <menu key="menu" id="F84-CN-R5Z" userLabel="DietFilterMenu">
                                                     <children>
                                                         <command title="Item 1" id="5yy-d7-bnD"/>
                                                         <command title="Item 2" id="WtH-4t-cyv"/>
