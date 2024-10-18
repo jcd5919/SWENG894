@@ -12,7 +12,7 @@ import SwiftUI
 protocol SearchView: AnyObject {
 }
 
-class SearchViewController: UIViewController, PresenterView{
+class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView{
     func updateSearchUI() {
     }
     
@@ -33,6 +33,10 @@ class SearchViewController: UIViewController, PresenterView{
         super.viewDidLoad()
         setUpFoodFilterButton()
         setUpDietFilterButton()
+        self.ingredient1Box.delegate = self
+        self.ingredient2Box.delegate = self
+        self.ingredient3Box.delegate = self
+        self.ingredient4Box.delegate = self
     }
     
     @IBAction func cameraButton(_ sender: Any) {
@@ -99,6 +103,10 @@ class SearchViewController: UIViewController, PresenterView{
         present(navVC, animated: true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 
 }
 

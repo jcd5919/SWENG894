@@ -37,15 +37,22 @@ class SearchPresenter {
     
     
     func createSearch(foodFilter: String = "None", typeFilter: String = "None", ingredient1: String, ingredient2: String = "", ingredient3: String = "", ingredient4: String = "")-> String {
-       
+        var filter = false
         var search = ""
         if foodFilter != "None" {
             search += foodFilter
+            filter = true
         }
         if typeFilter != "None" {
-            search += typeFilter
+            search += "+" + typeFilter
+            filter = true
         }
-        search += ingredient1
+        if (filter){
+            search += "+" + ingredient1
+        }
+        else{
+            search += ingredient1
+        }        
         if ingredient2 != "" {
             search += "+" + ingredient2
         }
@@ -59,5 +66,6 @@ class SearchPresenter {
         
         return search
     }
+    
 
 }

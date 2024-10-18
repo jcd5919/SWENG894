@@ -206,6 +206,36 @@ final class PhotoFoodUITests: XCTestCase {
         //Assert that each food filter type button exists
         XCTAssert(app.staticTexts["Dairy-Free"].exists)
     }
+    
+    func testURLRequestSuccess() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let ingredient1Textfield = app.textFields["Ingredient 1"]
+        let ingredient2Textfield = app.textFields["Ingredient 2"]
+        let ingredient3Textfield = app.textFields["Ingredient 3"]
+        let ingredient4Textfield = app.textFields["Ingredient 4"]
+        
+        //now tap each textfield and enter our test items
+        ingredient1Textfield.tap()
+        ingredient1Textfield.typeText("Blueberries")
+        
+        ingredient2Textfield.tap()
+        ingredient2Textfield.typeText("Pie Dough")
+        
+        ingredient3Textfield.tap()
+        ingredient3Textfield.typeText("Sugar")
+        
+        ingredient4Textfield.tap()
+        ingredient4Textfield.typeText("Cream")
+        
+        app.buttons["Search"].tap()
+        //Assert that we are now on the search results page.
+        XCTAssert(app.staticTexts["Search Results"].exists)
+        
+        //Count the number of result and confirm that there are 20 result boxes
+            
+    }
    
 
 }

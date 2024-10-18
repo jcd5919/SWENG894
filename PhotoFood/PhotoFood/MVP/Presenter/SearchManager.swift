@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+
 class SearchManager: ObservableObject {
     
     @Published var items = ItemsData(allItems: [])

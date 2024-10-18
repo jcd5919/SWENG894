@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 extension String {
     
     func load() -> UIImage {
