@@ -9,27 +9,27 @@ import Foundation
 
 struct GoogleSearchData: Codable {
     
-    let result: [Results]
+    let items: [Items]
     
-    struct Results: Codable{
+    struct Items: Codable{
         let title: String?
-        let short_desc: String?
-        let url_link: String?
+        let snippet: String?
+        let link: String?
         
         let pagemap: PageMap
         
         struct PageMap: Codable{
             
-            let metaTags: [MetaTag]
+            let metatags: [Metatag]
             
-            struct MetaTag: Codable{
+            struct Metatag: Codable{
                 
                 let ogImage: String?
                 enum CodingKeys: String, CodingKey{
-                    case ogImage = "ogImage"
+                    case ogImage = "og:Image"
                 }
             }
-                    }
+        }
     }
     
 }

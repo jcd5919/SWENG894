@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C7442CA740240071C685 /* FavoriteViewController.swift */; };
+		9809C74E2CB31D070071C685 /* GoogleSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */; };
+		9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */; };
+		986501C02CB5D797006C0159 /* PhotoFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986501BF2CB5D797006C0159 /* PhotoFoodTests.swift */; };
+		98876C2F2CC2CEB200E2B6B0 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98876C2E2CC2CEB200E2B6B0 /* SearchPresenterTests.swift */; };
+		9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13B2CBD905000AB4CBB /* SearchManager.swift */; };
+		9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */; };
+		9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */; };
+		98A4C3B62CBDC8EA00319485 /* testSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 98A4C3B52CBDC8EA00319485 /* testSearch.json */; };
+		98E07AE42CB83ED50070EA2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE32CB83ED50070EA2F /* Constants.swift */; };
+		98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */; };
+		98E7B1882CC1A56400A15640 /* PhotoFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7B1872CC1A56400A15640 /* PhotoFoodUITests.swift */; };
+		98E7B18A2CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7B1892CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift */; };
 		98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848C72C9CB4810080105D /* AppDelegate.swift */; };
 		98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848C92C9CB4810080105D /* SceneDelegate.swift */; };
 		98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848CB2C9CB4810080105D /* CameraViewController.swift */; };
@@ -19,8 +31,39 @@
 		98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848E62C9CD9720080105D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		986501C12CB5D797006C0159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F848BC2C9CB4810080105D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F848C32C9CB4810080105D;
+			remoteInfo = PhotoFood;
+		};
+		98E7B18B2CC1A56400A15640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F848BC2C9CB4810080105D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F848C32C9CB4810080105D;
+			remoteInfo = PhotoFood;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9809C7442CA740240071C685 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchModel.swift; sourceTree = "<group>"; };
+		9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchData.swift; sourceTree = "<group>"; };
+		986501BD2CB5D797006C0159 /* PhotoFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		986501BF2CB5D797006C0159 /* PhotoFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodTests.swift; sourceTree = "<group>"; };
+		98876C2E2CC2CEB200E2B6B0 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		9890C13B2CBD905000AB4CBB /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchView.swift; sourceTree = "<group>"; };
+		9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContentView.swift; sourceTree = "<group>"; };
+		98A4C3B52CBDC8EA00319485 /* testSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testSearch.json; sourceTree = "<group>"; };
+		98E07AE32CB83ED50070EA2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		98E7B1852CC1A56400A15640 /* PhotoFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E7B1872CC1A56400A15640 /* PhotoFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodUITests.swift; sourceTree = "<group>"; };
+		98E7B1892CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98F848C42C9CB4810080105D /* PhotoFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F848C72C9CB4810080105D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F848C92C9CB4810080105D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +77,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		986501BA2CB5D797006C0159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E7B1822CC1A56400A15640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98F848C12C9CB4810080105D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +101,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		986501BE2CB5D797006C0159 /* PhotoFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				986501BF2CB5D797006C0159 /* PhotoFoodTests.swift */,
+				98876C2E2CC2CEB200E2B6B0 /* SearchPresenterTests.swift */,
+			);
+			path = PhotoFoodTests;
+			sourceTree = "<group>";
+		};
+		98E7B1862CC1A56400A15640 /* PhotoFoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98E7B1872CC1A56400A15640 /* PhotoFoodUITests.swift */,
+				98E7B1892CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift */,
+			);
+			path = PhotoFoodUITests;
+			sourceTree = "<group>";
+		};
 		98F848BB2C9CB4810080105D = {
 			isa = PBXGroup;
 			children = (
 				98F848C62C9CB4810080105D /* PhotoFood */,
+				986501BE2CB5D797006C0159 /* PhotoFoodTests */,
+				98E7B1862CC1A56400A15640 /* PhotoFoodUITests */,
 				98F848C52C9CB4810080105D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				98F848C42C9CB4810080105D /* PhotoFood.app */,
+				986501BD2CB5D797006C0159 /* PhotoFoodTests.xctest */,
+				98E7B1852CC1A56400A15640 /* PhotoFoodUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +150,8 @@
 				98F848D52C9CB4820080105D /* LaunchScreen.storyboard */,
 				98F848D82C9CB4820080105D /* Info.plist */,
 				98F848D02C9CB4810080105D /* PhotoFood.xcdatamodeld */,
+				98E07AE32CB83ED50070EA2F /* Constants.swift */,
+				98A4C3B52CBDC8EA00319485 /* testSearch.json */,
 			);
 			path = PhotoFood;
 			sourceTree = "<group>";
@@ -88,6 +169,8 @@
 		98F848E32C9CC68A0080105D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */,
+				9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +181,8 @@
 				98F848CB2C9CB4810080105D /* CameraViewController.swift */,
 				9809C7442CA740240071C685 /* FavoriteViewController.swift */,
 				98F848E62C9CD9720080105D /* SearchViewController.swift */,
+				9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */,
+				9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +190,8 @@
 		98F848E52C9CC6990080105D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9890C13B2CBD905000AB4CBB /* SearchManager.swift */,
+				98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -112,6 +199,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		986501BC2CB5D797006C0159 /* PhotoFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986501C32CB5D797006C0159 /* Build configuration list for PBXNativeTarget "PhotoFoodTests" */;
+			buildPhases = (
+				986501B92CB5D797006C0159 /* Sources */,
+				986501BA2CB5D797006C0159 /* Frameworks */,
+				986501BB2CB5D797006C0159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				986501C22CB5D797006C0159 /* PBXTargetDependency */,
+			);
+			name = PhotoFoodTests;
+			productName = PhotoFoodTests;
+			productReference = 986501BD2CB5D797006C0159 /* PhotoFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98E7B1842CC1A56400A15640 /* PhotoFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98E7B18D2CC1A56400A15640 /* Build configuration list for PBXNativeTarget "PhotoFoodUITests" */;
+			buildPhases = (
+				98E7B1812CC1A56400A15640 /* Sources */,
+				98E7B1822CC1A56400A15640 /* Frameworks */,
+				98E7B1832CC1A56400A15640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98E7B18C2CC1A56400A15640 /* PBXTargetDependency */,
+			);
+			name = PhotoFoodUITests;
+			productName = PhotoFoodUITests;
+			productReference = 98E7B1852CC1A56400A15640 /* PhotoFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		98F848C32C9CB4810080105D /* PhotoFood */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F848DB2C9CB4820080105D /* Build configuration list for PBXNativeTarget "PhotoFood" */;
@@ -125,6 +248,8 @@
 			dependencies = (
 			);
 			name = PhotoFood;
+			packageProductDependencies = (
+			);
 			productName = PhotoFood;
 			productReference = 98F848C42C9CB4810080105D /* PhotoFood.app */;
 			productType = "com.apple.product-type.application";
@@ -136,9 +261,20 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					986501BC2CB5D797006C0159 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 98F848C32C9CB4810080105D;
+					};
+					98E7B1842CC1A56400A15640 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 98F848C32C9CB4810080105D;
+					};
 					98F848C32C9CB4810080105D = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -153,21 +289,40 @@
 				Base,
 			);
 			mainGroup = 98F848BB2C9CB4810080105D;
+			packageReferences = (
+			);
 			productRefGroup = 98F848C52C9CB4810080105D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				98F848C32C9CB4810080105D /* PhotoFood */,
+				986501BC2CB5D797006C0159 /* PhotoFoodTests */,
+				98E7B1842CC1A56400A15640 /* PhotoFoodUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		986501BB2CB5D797006C0159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E7B1832CC1A56400A15640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98F848C22C9CB4810080105D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98F848D42C9CB4820080105D /* Assets.xcassets in Resources */,
+				98A4C3B62CBDC8EA00319485 /* testSearch.json in Resources */,
 				98F848E02C9CC34F0080105D /* LaunchScreen.storyboard in Resources */,
 				98F848D72C9CB4820080105D /* Base in Resources */,
 				98F848CF2C9CB4810080105D /* Base in Resources */,
@@ -177,20 +332,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		986501B92CB5D797006C0159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98876C2F2CC2CEB200E2B6B0 /* SearchPresenterTests.swift in Sources */,
+				986501C02CB5D797006C0159 /* PhotoFoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E7B1812CC1A56400A15640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E7B1882CC1A56400A15640 /* PhotoFoodUITests.swift in Sources */,
+				98E7B18A2CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98F848C02C9CB4810080105D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */,
 				98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */,
+				9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */,
 				98F848D22C9CB4810080105D /* PhotoFood.xcdatamodeld in Sources */,
+				9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */,
+				9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */,
 				98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */,
+				9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */,
+				98E07AE42CB83ED50070EA2F /* Constants.swift in Sources */,
 				98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */,
 				9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */,
 				98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */,
+				9809C74E2CB31D070071C685 /* GoogleSearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		986501C22CB5D797006C0159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F848C32C9CB4810080105D /* PhotoFood */;
+			targetProxy = 986501C12CB5D797006C0159 /* PBXContainerItemProxy */;
+		};
+		98E7B18C2CC1A56400A15640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F848C32C9CB4810080105D /* PhotoFood */;
+			targetProxy = 98E7B18B2CC1A56400A15640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		98F848CD2C9CB4810080105D /* Main.storyboard */ = {
@@ -212,6 +405,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		986501C42CB5D797006C0159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR86LSC934;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jduck.PhotoFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoFood";
+			};
+			name = Debug;
+		};
+		986501C52CB5D797006C0159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR86LSC934;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jduck.PhotoFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoFood";
+			};
+			name = Release;
+		};
+		98E7B18E2CC1A56400A15640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR86LSC934;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jduck.PhotoFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoFood;
+			};
+			name = Debug;
+		};
+		98E7B18F2CC1A56400A15640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR86LSC934;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jduck.PhotoFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoFood;
+			};
+			name = Release;
+		};
 		98F848D92C9CB4820080105D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +604,8 @@
 				DEVELOPMENT_TEAM = CR86LSC934;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to take photos of ingredients";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -370,6 +635,8 @@
 				DEVELOPMENT_TEAM = CR86LSC934;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to take photos of ingredients";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -392,6 +659,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		986501C32CB5D797006C0159 /* Build configuration list for PBXNativeTarget "PhotoFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986501C42CB5D797006C0159 /* Debug */,
+				986501C52CB5D797006C0159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98E7B18D2CC1A56400A15640 /* Build configuration list for PBXNativeTarget "PhotoFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E7B18E2CC1A56400A15640 /* Debug */,
+				98E7B18F2CC1A56400A15640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		98F848BF2C9CB4810080105D /* Build configuration list for PBXProject "PhotoFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
