@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9806820E2CCEE1200001824E /* URecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */; };
+		980682112CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806820F2CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift */; };
+		980682122CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980682102CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift */; };
 		9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C7442CA740240071C685 /* FavoriteViewController.swift */; };
 		9809C74E2CB31D070071C685 /* GoogleSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */; };
 		9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */; };
@@ -24,7 +27,6 @@
 		98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848C92C9CB4810080105D /* SceneDelegate.swift */; };
 		98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F848CB2C9CB4810080105D /* CameraViewController.swift */; };
 		98F848CF2C9CB4810080105D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 98F848CE2C9CB4810080105D /* Base */; };
-		98F848D22C9CB4810080105D /* PhotoFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98F848D02C9CB4810080105D /* PhotoFood.xcdatamodeld */; };
 		98F848D42C9CB4820080105D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F848D32C9CB4820080105D /* Assets.xcassets */; };
 		98F848D72C9CB4820080105D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 98F848D62C9CB4820080105D /* Base */; };
 		98F848E02C9CC34F0080105D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F848D52C9CB4820080105D /* LaunchScreen.storyboard */; };
@@ -49,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9806820D2CCEE1200001824E /* URecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URecipes.xcdatamodel; sourceTree = "<group>"; };
+		9806820F2CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRecipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		980682102CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRecipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9809C7442CA740240071C685 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchModel.swift; sourceTree = "<group>"; };
 		9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchData.swift; sourceTree = "<group>"; };
@@ -69,7 +74,6 @@
 		98F848C92C9CB4810080105D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		98F848CB2C9CB4810080105D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		98F848CE2C9CB4810080105D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98F848D12C9CB4810080105D /* PhotoFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoFood.xcdatamodel; sourceTree = "<group>"; };
 		98F848D32C9CB4820080105D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98F848D62C9CB4820080105D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98F848D82C9CB4820080105D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980682132CCEE2610001824E /* UserRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				9806820F2CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift */,
+				980682102CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift */,
+			);
+			path = UserRecipe;
+			sourceTree = "<group>";
+		};
 		986501BE2CB5D797006C0159 /* PhotoFoodTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,14 +155,15 @@
 		98F848C62C9CB4810080105D /* PhotoFood */ = {
 			isa = PBXGroup;
 			children = (
+				980682132CCEE2610001824E /* UserRecipe */,
 				98F848E22C9CC6830080105D /* MVP */,
 				98F848C72C9CB4810080105D /* AppDelegate.swift */,
 				98F848C92C9CB4810080105D /* SceneDelegate.swift */,
+				9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */,
 				98F848CD2C9CB4810080105D /* Main.storyboard */,
 				98F848D32C9CB4820080105D /* Assets.xcassets */,
 				98F848D52C9CB4820080105D /* LaunchScreen.storyboard */,
 				98F848D82C9CB4820080105D /* Info.plist */,
-				98F848D02C9CB4810080105D /* PhotoFood.xcdatamodeld */,
 				98E07AE32CB83ED50070EA2F /* Constants.swift */,
 				98A4C3B52CBDC8EA00319485 /* testSearch.json */,
 			);
@@ -355,9 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */,
+				9806820E2CCEE1200001824E /* URecipes.xcdatamodeld in Sources */,
 				98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */,
 				9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */,
-				98F848D22C9CB4810080105D /* PhotoFood.xcdatamodeld in Sources */,
+				980682112CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift in Sources */,
+				980682122CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift in Sources */,
 				9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */,
 				9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */,
 				98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */,
@@ -698,13 +714,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		98F848D02C9CB4810080105D /* PhotoFood.xcdatamodeld */ = {
+		9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				98F848D12C9CB4810080105D /* PhotoFood.xcdatamodel */,
+				9806820D2CCEE1200001824E /* URecipes.xcdatamodel */,
 			);
-			currentVersion = 98F848D12C9CB4810080105D /* PhotoFood.xcdatamodel */;
-			path = PhotoFood.xcdatamodeld;
+			currentVersion = 9806820D2CCEE1200001824E /* URecipes.xcdatamodel */;
+			path = URecipes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -94,11 +94,11 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
 }
     
     @IBAction func favoritesButton(_ sender: Any) {
-        guard let fvc = storyboard?.instantiateViewController(withIdentifier: "favoriteController") else{
+        guard let urvc = storyboard?.instantiateViewController(withIdentifier: "favoriteController") else{
             print("failed to get fvc from storyboard")
             return
         }
-        let navVC = UINavigationController(rootViewController: fvc)
+        let navVC = UINavigationController(rootViewController: urvc)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true)
     }
