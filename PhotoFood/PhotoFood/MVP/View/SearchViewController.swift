@@ -94,7 +94,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
 }
     
     @IBAction func favoritesButton(_ sender: Any) {
-        guard let urvc = storyboard?.instantiateViewController(withIdentifier: "favoriteController") else{
+        guard let urvc = storyboard?.instantiateViewController(withIdentifier: "URecipesTableViewController") else{
             print("failed to get fvc from storyboard")
             return
         }

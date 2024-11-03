@@ -54,7 +54,7 @@ final class PhotoFoodUITests: XCTestCase {
         app.launch()
         //Tap the favorites button which should take us to a page with header List of Favorites
         app.buttons["Favorites"].tap()
-        XCTAssert(app.staticTexts["List of Favorites"].exists)
+        XCTAssert(app.staticTexts["Recipes"].exists)
         //Now that we are on the list of favorites page, tap the navigation bar back button
         //and verify we go back to the original view
         app.navigationBars.buttons["Back"].tap()

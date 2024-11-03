@@ -10,6 +10,10 @@
 		9806820E2CCEE1200001824E /* URecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */; };
 		980682112CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806820F2CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift */; };
 		980682122CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980682102CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift */; };
+		9806821B2CD7DF3B0001824E /* UserRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806821A2CD7DF3B0001824E /* UserRecipeViewController.swift */; };
+		9806821D2CD7E1EE0001824E /* URecipesDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806821C2CD7E1EE0001824E /* URecipesDataStack.swift */; };
+		9806821F2CD7E2CB0001824E /* URecipesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806821E2CD7E2CB0001824E /* URecipesService.swift */; };
+		980682212CD7E74C0001824E /* URecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980682202CD7E74C0001824E /* URecipesTableViewController.swift */; };
 		9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C7442CA740240071C685 /* FavoriteViewController.swift */; };
 		9809C74E2CB31D070071C685 /* GoogleSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */; };
 		9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */; };
@@ -54,6 +58,10 @@
 		9806820D2CCEE1200001824E /* URecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URecipes.xcdatamodel; sourceTree = "<group>"; };
 		9806820F2CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRecipe+CoreDataClass.swift"; sourceTree = "<group>"; };
 		980682102CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRecipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9806821A2CD7DF3B0001824E /* UserRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipeViewController.swift; sourceTree = "<group>"; };
+		9806821C2CD7E1EE0001824E /* URecipesDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecipesDataStack.swift; sourceTree = "<group>"; };
+		9806821E2CD7E2CB0001824E /* URecipesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecipesService.swift; sourceTree = "<group>"; };
+		980682202CD7E74C0001824E /* URecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecipesTableViewController.swift; sourceTree = "<group>"; };
 		9809C7442CA740240071C685 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchModel.swift; sourceTree = "<group>"; };
 		9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchData.swift; sourceTree = "<group>"; };
@@ -114,6 +122,15 @@
 			path = UserRecipe;
 			sourceTree = "<group>";
 		};
+		980682222CD7F4ED0001824E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9806821E2CD7E2CB0001824E /* URecipesService.swift */,
+				9806821C2CD7E1EE0001824E /* URecipesDataStack.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		986501BE2CB5D797006C0159 /* PhotoFoodTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,11 +172,11 @@
 		98F848C62C9CB4810080105D /* PhotoFood */ = {
 			isa = PBXGroup;
 			children = (
+				980682222CD7F4ED0001824E /* Services */,
 				980682132CCEE2610001824E /* UserRecipe */,
 				98F848E22C9CC6830080105D /* MVP */,
 				98F848C72C9CB4810080105D /* AppDelegate.swift */,
 				98F848C92C9CB4810080105D /* SceneDelegate.swift */,
-				9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */,
 				98F848CD2C9CB4810080105D /* Main.storyboard */,
 				98F848D32C9CB4820080105D /* Assets.xcassets */,
 				98F848D52C9CB4820080105D /* LaunchScreen.storyboard */,
@@ -183,6 +200,7 @@
 		98F848E32C9CC68A0080105D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9806820C2CCEE1200001824E /* URecipes.xcdatamodeld */,
 				9809C74D2CB31D070071C685 /* GoogleSearchModel.swift */,
 				9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */,
 			);
@@ -197,6 +215,8 @@
 				98F848E62C9CD9720080105D /* SearchViewController.swift */,
 				9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */,
 				9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */,
+				9806821A2CD7DF3B0001824E /* UserRecipeViewController.swift */,
+				980682202CD7E74C0001824E /* URecipesTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,7 +393,10 @@
 				98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */,
 				9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */,
 				980682112CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift in Sources */,
+				980682212CD7E74C0001824E /* URecipesTableViewController.swift in Sources */,
 				980682122CCEE1EF0001824E /* UserRecipe+CoreDataProperties.swift in Sources */,
+				9806821F2CD7E2CB0001824E /* URecipesService.swift in Sources */,
+				9806821B2CD7DF3B0001824E /* UserRecipeViewController.swift in Sources */,
 				9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */,
 				9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */,
 				98F848CC2C9CB4810080105D /* CameraViewController.swift in Sources */,
@@ -382,6 +405,7 @@
 				98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */,
 				9809C7452CA740240071C685 /* FavoriteViewController.swift in Sources */,
 				98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */,
+				9806821D2CD7E1EE0001824E /* URecipesDataStack.swift in Sources */,
 				9809C74E2CB31D070071C685 /* GoogleSearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
