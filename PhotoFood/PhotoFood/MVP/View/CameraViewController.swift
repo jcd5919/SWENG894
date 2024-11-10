@@ -121,7 +121,13 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate{
         let imageView = UIImageView(image:image)
         imageView.contentMode = .scaleAspectFill
         imageView.frame = view.bounds
-        view.addSubview(imageView)
+        guard let csvc = storyboard?.instantiateViewController(withIdentifier: "PhotoSearchViewController") else{
+            print("failed to get csvc from storyboard")
+            return
+        }
+        let navVC = UINavigationController(rootViewController: csvc)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
     }
     @objc private func backSelf(){
         dismiss(animated: true, completion: nil)

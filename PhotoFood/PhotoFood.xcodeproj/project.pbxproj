@@ -23,6 +23,7 @@
 		9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */; };
 		989310D12CD8090D002D6D89 /* TestURecipesDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989310D02CD8090C002D6D89 /* TestURecipesDataStack.swift */; };
 		989310D32CD809AC002D6D89 /* URecipesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989310D22CD809AC002D6D89 /* URecipesServiceTests.swift */; };
+		989310D52CE14CD0002D6D89 /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989310D42CE14CD0002D6D89 /* PhotoSearchViewController.swift */; };
 		98A4C3B62CBDC8EA00319485 /* testSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 98A4C3B52CBDC8EA00319485 /* testSearch.json */; };
 		98E07AE42CB83ED50070EA2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE32CB83ED50070EA2F /* Constants.swift */; };
 		98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */; };
@@ -73,6 +74,7 @@
 		9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContentView.swift; sourceTree = "<group>"; };
 		989310D02CD8090C002D6D89 /* TestURecipesDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURecipesDataStack.swift; sourceTree = "<group>"; };
 		989310D22CD809AC002D6D89 /* URecipesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecipesServiceTests.swift; sourceTree = "<group>"; };
+		989310D42CE14CD0002D6D89 /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
 		98A4C3B52CBDC8EA00319485 /* testSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testSearch.json; sourceTree = "<group>"; };
 		98E07AE32CB83ED50070EA2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				9890C13F2CBDA6C000AB4CBB /* SearchContentView.swift */,
 				9806821A2CD7DF3B0001824E /* UserRecipeViewController.swift */,
 				980682202CD7E74C0001824E /* URecipesTableViewController.swift */,
+				989310D42CE14CD0002D6D89 /* PhotoSearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */,
+				989310D52CE14CD0002D6D89 /* PhotoSearchViewController.swift in Sources */,
 				9806820E2CCEE1200001824E /* URecipes.xcdatamodeld in Sources */,
 				98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */,
 				9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */,

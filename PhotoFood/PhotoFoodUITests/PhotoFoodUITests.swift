@@ -236,6 +236,57 @@ final class PhotoFoodUITests: XCTestCase {
         //Count the number of result and confirm that there are 20 result boxes
             
     }
+    
+    func testAddButtonExists() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let favoritesButton = app.buttons["Favorites"]
+        
+        favoritesButton.tap()
+        let rightNavBarButton = XCUIApplication().navigationBars.buttons["Add"]
+        XCTAssert(rightNavBarButton.exists)
+    }
+    
+    func testAddRecipeNavigation() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let favoritesButton = app.buttons["Favorites"]
+        
+        favoritesButton.tap()
+        let rightNavBarButton = XCUIApplication().navigationBars.buttons["Add"]
+        rightNavBarButton.tap()
+        
+        //Assert we are now in the add recipe view
+        XCTAssert(app.staticTexts["Recipe Details"].exists)
+        
+        let cancelButton = XCUIApplication().navigationBars.buttons["Cancel"]
+        XCTAssert(cancelButton.exists)
+        cancelButton.tap()
+        XCTAssert(app.staticTexts["Recipes"].exists)
+    }
+    
+    func testAddRecipeElementsExist() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let favoritesButton = app.buttons["Favorites"]
+        
+        favoritesButton.tap()
+        let rightNavBarButton = XCUIApplication().navigationBars.buttons["Add"]
+        rightNavBarButton.tap()
+        
+        //Assert we are now in the add recipe view
+        XCTAssert(app.staticTexts["Recipe Details"].exists)
+        //This test verifies that when launching the application, all of the
+        //expected UI items exist
+        
+        let saveButton = XCUIApplication().navigationBars.buttons["Save"]
+        XCTAssert(saveButton.exists)
+        XCTAssert(app.textFields["Recipe Name"].exists)
+
+    }
    
 
 }
