@@ -41,7 +41,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
     
     @IBAction func cameraButton(_ sender: Any) {
         
-        guard let cvc = storyboard?.instantiateViewController(withIdentifier: "cameraController") else{
+        guard let cvc = storyboard?.instantiateViewController(withIdentifier: "PhotoSelectorViewController") else{
             print("failed to get cvc from storyboard")
             return
         }

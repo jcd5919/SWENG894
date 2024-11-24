@@ -17,10 +17,10 @@ class PhotoSearchViewController: UIViewController, UITextFieldDelegate, Presente
         
     }
     
-    
     @IBOutlet weak var foodFilterButton: UIButton!
     @IBOutlet weak var dietFilterButton: UIButton!
 
+    var searchIngredients = ""
     @IBOutlet weak var currentIngredients: UILabel!
     
     lazy var presenter = SearchPresenter(view:self)
@@ -29,17 +29,14 @@ class PhotoSearchViewController: UIViewController, UITextFieldDelegate, Presente
         super.viewDidLoad()
         setUpFoodFilterButton()
         setUpDietFilterButton()
+        currentIngredients.text = searchIngredients
     }
     
     @IBAction func cameraButton(_ sender: Any) {
-        
-        guard let cvc = storyboard?.instantiateViewController(withIdentifier: "cameraController") else{
-            print("failed to get cvc from storyboard")
-            return
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "PhotoSelectorViewController") as? PhotoSelectorViewController {
+            destinationVC.currentSearch = "\(searchIngredients) "
+            navigationController?.pushViewController(destinationVC, animated: true)
         }
-        let navVC = UINavigationController(rootViewController: cvc)
-        navVC.modalPresentationStyle = .fullScreen
-        present(navVC, animated: true)
     }
     
     func setUpFoodFilterButton(){
@@ -71,9 +68,14 @@ class PhotoSearchViewController: UIViewController, UITextFieldDelegate, Presente
     }
     
     @IBAction func searchTap(_ sender: Any) {
-        
         presenter.foodFilter = foodFilterButton.currentTitle
         presenter.typeFilter = dietFilterButton.currentTitle
+        presenter.ingredient1 = searchIngredients
+        searchIngredients = ""
+        presenter.ingredient2 = ""
+        presenter.ingredient3 = ""
+        presenter.ingredient4 = ""
+
         presenter.searchButtonClicked()
         let searchURL = presenter.searchURL
         let hostingController = UIHostingController(rootView: SearchContentView(searchWord: searchURL!))
@@ -86,6 +88,7 @@ class PhotoSearchViewController: UIViewController, UITextFieldDelegate, Presente
             print("failed to get svc from storyboard")
             return
         }
+        searchIngredients = ""
         let navVC = UINavigationController(rootViewController: svc)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true)
