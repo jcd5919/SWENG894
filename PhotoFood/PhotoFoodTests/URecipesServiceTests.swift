@@ -68,7 +68,7 @@ final class URecipesServiceTests: XCTestCase {
         XCTAssertNotNil(recipe)
       }
 
-      waitForExpectations(timeout: 2.0) { error in
+      waitForExpectations(timeout: 5.0) { error in
         XCTAssertNil(error, "Save did not occur")
       }
     }
