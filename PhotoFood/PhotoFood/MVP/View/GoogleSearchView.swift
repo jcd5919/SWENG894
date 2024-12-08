@@ -54,7 +54,7 @@ struct GoogleSearchView: View {
                             .frame(width: 200, height: 60)
                             .font(.system(size: 15))
                         
-                        Text(item.link[index]!)
+                        Link(item.link[index]!, destination: URL(string: item.link[index]!)!)
                             .frame(width: 200)
                             .font(.system(size: 15))
                             .foregroundColor(.blue)

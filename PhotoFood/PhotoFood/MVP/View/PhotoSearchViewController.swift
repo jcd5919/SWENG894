@@ -1,31 +1,27 @@
 //
-//  SearchViewController.swift
+//  PhotoSearchViewController.swift
 //  PhotoFood
 //
-//  Created by Joseph Duckwall on 9/19/24.
+//  Created by Joseph Duckwall on 11/4/24.
 //
+
 
 import Foundation
 import UIKit
 import SwiftUI
 
-protocol SearchView: AnyObject {
-}
 
-class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView{
+
+class PhotoSearchViewController: UIViewController, UITextFieldDelegate, PresenterView{
     func updateSearchUI() {
+        
     }
-    
-    
     
     @IBOutlet weak var foodFilterButton: UIButton!
     @IBOutlet weak var dietFilterButton: UIButton!
-    
-    
-    @IBOutlet weak var ingredient1Box: UITextField!
-    @IBOutlet weak var ingredient2Box: UITextField!
-    @IBOutlet weak var ingredient3Box: UITextField!
-    @IBOutlet weak var ingredient4Box: UITextField!
+
+    var searchIngredients = ""
+    @IBOutlet weak var currentIngredients: UILabel!
     
     lazy var presenter = SearchPresenter(view:self)
     
@@ -33,21 +29,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
         super.viewDidLoad()
         setUpFoodFilterButton()
         setUpDietFilterButton()
-        self.ingredient1Box.delegate = self
-        self.ingredient2Box.delegate = self
-        self.ingredient3Box.delegate = self
-        self.ingredient4Box.delegate = self
+        currentIngredients.text = searchIngredients
     }
     
     @IBAction func cameraButton(_ sender: Any) {
-        
-        guard let cvc = storyboard?.instantiateViewController(withIdentifier: "PhotoSelectorViewController") else{
-            print("failed to get cvc from storyboard")
-            return
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "PhotoSelectorViewController") as? PhotoSelectorViewController {
+            destinationVC.currentSearch = "\(searchIngredients) "
+            navigationController?.pushViewController(destinationVC, animated: true)
         }
-        let navVC = UINavigationController(rootViewController: cvc)
-        navVC.modalPresentationStyle = .fullScreen
-        present(navVC, animated: true)
     }
     
     func setUpFoodFilterButton(){
@@ -79,13 +68,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
     }
     
     @IBAction func searchTap(_ sender: Any) {
-        
         presenter.foodFilter = foodFilterButton.currentTitle
         presenter.typeFilter = dietFilterButton.currentTitle
-        presenter.ingredient1 = ingredient1Box.text
-        presenter.ingredient2 = ingredient2Box.text
-        presenter.ingredient3 = ingredient3Box.text
-        presenter.ingredient4 = ingredient4Box.text
+        presenter.ingredient1 = searchIngredients
+        searchIngredients = ""
+        presenter.ingredient2 = ""
+        presenter.ingredient3 = ""
+        presenter.ingredient4 = ""
+
         presenter.searchButtonClicked()
         let searchURL = presenter.searchURL
         let hostingController = UIHostingController(rootView: SearchContentView(searchWord: searchURL!))
@@ -93,21 +83,16 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PresenterView
         present(hostingController, animated: true)
 }
     
-    @IBAction func favoritesButton(_ sender: Any) {
-        guard let urvc = storyboard?.instantiateViewController(withIdentifier: "URecipesTableViewController") else{
-            print("failed to get fvc from storyboard")
+    @IBAction func cancelSearch(_ sender: Any) {
+        guard let svc = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") else{
+            print("failed to get svc from storyboard")
             return
         }
-        let navVC = UINavigationController(rootViewController: urvc)
+        searchIngredients = ""
+        let navVC = UINavigationController(rootViewController: svc)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true)
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
-
 }
 
     
