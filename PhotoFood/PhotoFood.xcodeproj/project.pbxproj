@@ -18,12 +18,13 @@
 		9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */; };
 		982865332CEFC27E00B0BF24 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982865322CEFC27E00B0BF24 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		982865352CEFC29A00B0BF24 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982865342CEFC29A00B0BF24 /* VNClassificationObservation+confidenceString.swift */; };
-		982865382CEFC35B00B0BF24 /* 20class.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 982865372CEFC35B00B0BF24 /* 20class.mlmodel */; };
 		9828653B2CEFC40F00B0BF24 /* FoodPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828653A2CEFC40F00B0BF24 /* FoodPredictor.swift */; };
 		9828653E2CEFC59700B0BF24 /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828653D2CEFC59700B0BF24 /* PhotoSelectorViewController.swift */; };
 		982865402CEFC6EF00B0BF24 /* PhotoSelectorViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828653F2CEFC6EF00B0BF24 /* PhotoSelectorViewController+CameraPicker.swift */; };
 		982865422CEFC71500B0BF24 /* PhotoSelectorViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982865412CEFC71500B0BF24 /* PhotoSelectorViewController+PhotoPicker.swift */; };
 		986501C02CB5D797006C0159 /* PhotoFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986501BF2CB5D797006C0159 /* PhotoFoodTests.swift */; };
+		9869ABE72D9DBCE50029CC5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869ABE62D9DBCE50029CC5C /* Constants.swift */; };
+		9869ABE92D9DBDC60029CC5C /* 20class.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9869ABE82D9DBDC60029CC5C /* 20class.mlmodel */; };
 		98876C2F2CC2CEB200E2B6B0 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98876C2E2CC2CEB200E2B6B0 /* SearchPresenterTests.swift */; };
 		9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13B2CBD905000AB4CBB /* SearchManager.swift */; };
 		9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */; };
@@ -32,7 +33,6 @@
 		989310D32CD809AC002D6D89 /* URecipesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989310D22CD809AC002D6D89 /* URecipesServiceTests.swift */; };
 		989310D52CE14CD0002D6D89 /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989310D42CE14CD0002D6D89 /* PhotoSearchViewController.swift */; };
 		98A4C3B62CBDC8EA00319485 /* testSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 98A4C3B52CBDC8EA00319485 /* testSearch.json */; };
-		98E07AE42CB83ED50070EA2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE32CB83ED50070EA2F /* Constants.swift */; };
 		98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */; };
 		98E7B1882CC1A56400A15640 /* PhotoFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7B1872CC1A56400A15640 /* PhotoFoodUITests.swift */; };
 		98E7B18A2CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7B1892CC1A56400A15640 /* PhotoFoodUITestsLaunchTests.swift */; };
@@ -74,13 +74,14 @@
 		9809C74F2CB3206D0071C685 /* GoogleSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchData.swift; sourceTree = "<group>"; };
 		982865322CEFC27E00B0BF24 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		982865342CEFC29A00B0BF24 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
-		982865372CEFC35B00B0BF24 /* 20class.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = 20class.mlmodel; path = ../../../../20class.mlmodel; sourceTree = "<group>"; };
 		9828653A2CEFC40F00B0BF24 /* FoodPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPredictor.swift; sourceTree = "<group>"; };
 		9828653D2CEFC59700B0BF24 /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		9828653F2CEFC6EF00B0BF24 /* PhotoSelectorViewController+CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoSelectorViewController+CameraPicker.swift"; sourceTree = "<group>"; };
 		982865412CEFC71500B0BF24 /* PhotoSelectorViewController+PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoSelectorViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
 		986501BD2CB5D797006C0159 /* PhotoFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		986501BF2CB5D797006C0159 /* PhotoFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodTests.swift; sourceTree = "<group>"; };
+		9869ABE62D9DBCE50029CC5C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../.Trash/Constants.swift; sourceTree = "<group>"; };
+		9869ABE82D9DBDC60029CC5C /* 20class.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = 20class.mlmodel; path = ../../../../../.Trash/20class.mlmodel; sourceTree = "<group>"; };
 		98876C2E2CC2CEB200E2B6B0 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 		9890C13B2CBD905000AB4CBB /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		9890C13D2CBD978C00AB4CBB /* GoogleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchView.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		989310D22CD809AC002D6D89 /* URecipesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecipesServiceTests.swift; sourceTree = "<group>"; };
 		989310D42CE14CD0002D6D89 /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
 		98A4C3B52CBDC8EA00319485 /* testSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testSearch.json; sourceTree = "<group>"; };
-		98E07AE32CB83ED50070EA2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		98E07AE52CB84AEA0070EA2F /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		98E7B1852CC1A56400A15640 /* PhotoFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E7B1872CC1A56400A15640 /* PhotoFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodUITests.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		982865362CEFC2BC00B0BF24 /* ClassifierModels */ = {
 			isa = PBXGroup;
 			children = (
-				982865372CEFC35B00B0BF24 /* 20class.mlmodel */,
+				9869ABE82D9DBDC60029CC5C /* 20class.mlmodel */,
 			);
 			path = ClassifierModels;
 			sourceTree = "<group>";
@@ -236,8 +236,8 @@
 				98F848CD2C9CB4810080105D /* Main.storyboard */,
 				98F848D32C9CB4820080105D /* Assets.xcassets */,
 				98F848D52C9CB4820080105D /* LaunchScreen.storyboard */,
+				9869ABE62D9DBCE50029CC5C /* Constants.swift */,
 				98F848D82C9CB4820080105D /* Info.plist */,
-				98E07AE32CB83ED50070EA2F /* Constants.swift */,
 				98A4C3B52CBDC8EA00319485 /* testSearch.json */,
 			);
 			path = PhotoFood;
@@ -446,12 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9869ABE72D9DBCE50029CC5C /* Constants.swift in Sources */,
 				98E07AE62CB84AEA0070EA2F /* SearchPresenter.swift in Sources */,
 				989310D52CE14CD0002D6D89 /* PhotoSearchViewController.swift in Sources */,
 				9806820E2CCEE1200001824E /* URecipes.xcdatamodeld in Sources */,
 				982865422CEFC71500B0BF24 /* PhotoSelectorViewController+PhotoPicker.swift in Sources */,
 				98F848E72C9CD9720080105D /* SearchViewController.swift in Sources */,
 				982865332CEFC27E00B0BF24 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				9869ABE92D9DBDC60029CC5C /* 20class.mlmodel in Sources */,
 				9890C1402CBDA6C000AB4CBB /* SearchContentView.swift in Sources */,
 				980682112CCEE1EF0001824E /* UserRecipe+CoreDataClass.swift in Sources */,
 				980682212CD7E74C0001824E /* URecipesTableViewController.swift in Sources */,
@@ -459,12 +461,10 @@
 				982865402CEFC6EF00B0BF24 /* PhotoSelectorViewController+CameraPicker.swift in Sources */,
 				9806821F2CD7E2CB0001824E /* URecipesService.swift in Sources */,
 				9806821B2CD7DF3B0001824E /* UserRecipeViewController.swift in Sources */,
-				982865382CEFC35B00B0BF24 /* 20class.mlmodel in Sources */,
 				9890C13E2CBD978C00AB4CBB /* GoogleSearchView.swift in Sources */,
 				9890C13C2CBD905000AB4CBB /* SearchManager.swift in Sources */,
 				9809C7502CB3206D0071C685 /* GoogleSearchData.swift in Sources */,
 				9828653E2CEFC59700B0BF24 /* PhotoSelectorViewController.swift in Sources */,
-				98E07AE42CB83ED50070EA2F /* Constants.swift in Sources */,
 				98F848C82C9CB4810080105D /* AppDelegate.swift in Sources */,
 				982865352CEFC29A00B0BF24 /* VNClassificationObservation+confidenceString.swift in Sources */,
 				98F848CA2C9CB4810080105D /* SceneDelegate.swift in Sources */,
